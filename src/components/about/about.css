@@ -37,6 +37,7 @@
 }
 
 .about__card {
+  --color-bg-variant: #a9def9;
   background: var(--color-bg-variant);
   border: 1px solid transparent;
   border-radius: 1rem;

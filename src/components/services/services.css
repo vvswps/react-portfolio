@@ -58,11 +58,17 @@
   .service {
     height: auto;
   }
+  .service:last-child {
+    transform: translateX(50%);
+  }
 }
 
 @media screen and (max-width: 600px) {
   .services__container {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+  }
+  .service:last-child {
+    transform: none;
   }
 }

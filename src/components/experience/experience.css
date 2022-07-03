@@ -2,10 +2,13 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
+  --experience-color: #555b6e;
 }
 
 .experience__container > div {
-  background: var(--color-bg-variant);
+  /* background: var(--color-bg-variant); */
+  color: var(--experience-color);
+  background: #efc3e6;
   padding: 2.4rem 5rem;
   border-radius: 2rem;
   border: 1px solid transparent;
@@ -13,6 +16,7 @@
 }
 
 .experience__container > div:hover {
+  color: white;
   background: transparent;
   border-color: var(--color-primary-variant);
   cursor: default;
@@ -21,7 +25,9 @@
 .experience__container > div h3 {
   text-align: center;
   margin-bottom: 2rem;
-  color: var(--color-primary);
+  /* color: var(--color-primary); */
+  color: var(--experience-color);
+  transition: var(--transition);
 }
 
 .experience__content {
@@ -36,9 +42,15 @@
 }
 .experience__details-icon {
   margin-top: 6px;
-  color: var(--color-primary);
+  /* color: var(--color-primary); */
+  color: var(--experience-color);
+  transition: var(--transition);
 }
 
+.experience__container > div:hover .experience__details-icon,
+.experience__container > div:hover .experience__container > div h3 {
+  color: white;
+}
 @media screen and (max-width: 1024px) {
   .experience__container {
     grid-template-columns: 1fr;
