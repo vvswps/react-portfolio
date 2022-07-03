@@ -5,7 +5,7 @@ import AVTR2 from "../../assets/avatar2.webp";
 import AVTR3 from "../../assets/avatar3.webp";
 import AVTR4 from "../../assets/avatar4.webp";
 
-import { Pagination } from "swiper";
+import { Pagination, Mousewheel, Navigation, Keyboard } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
@@ -48,6 +48,31 @@ const testimonials = () => {
 
       <Swiper
         className="container container__testimonials"
+        slidesPerView={1}
+        spaceBetween={30}
+        mousewheel={true}
+        navigation={true}
+        loop={true}
+        keyboard={true}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Mousewheel, Pagination, Navigation, Keyboard]}
+      >
+        {data.map(({ avatar, name, review }, index) => {
+          return (
+            <SwiperSlide key={index} className="testimonial">
+              <div className="client__avatar">
+                <img src={avatar} alt="meh" />
+              </div>
+              <h5 className="client__name">{name}</h5>
+              <small className="client__review">{review}</small>
+            </SwiperSlide>
+          );
+        })}
+      </Swiper>
+      {/* <Swiper
+        className="container container__testimonials"
         modules={[Pagination]}
         spaceBetween={30}
         slidesPerView={1}
@@ -64,7 +89,7 @@ const testimonials = () => {
             </SwiperSlide>
           );
         })}
-      </Swiper>
+      </Swiper> */}
     </section>
   );
 };

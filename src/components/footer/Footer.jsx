@@ -46,7 +46,11 @@ const Footer = () => {
       </div>
 
       <div className="footer__copyright">
-        <small>&copy;Copied from Egator tutorials🌚</small>
+        <small>
+          &copy;Copied from Egator tutorials🌚
+          <br />
+          More of a code-along but still copied yk
+        </small>
       </div>
     </footer>
   );

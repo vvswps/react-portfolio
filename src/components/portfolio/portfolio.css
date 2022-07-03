@@ -5,11 +5,17 @@
 }
 
 .portfolio__item {
-  background: var(--color-bg-variant);
   padding: 1.3rem;
   border-radius: 2rem;
   border: 1px solid transparent;
   transition: var(--transition);
+}
+
+.portfolio__item:nth-child(odd) {
+  background: #f29cfb;
+}
+.portfolio__item:nth-child(even) {
+  background: #ff6ac7;
 }
 
 .portfolio__item:hover {
