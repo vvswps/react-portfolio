@@ -38,10 +38,9 @@ const About = () => {
           </div>
 
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-            quia error omnis quae facere dolores illum fugiat quibusdam suscipit
-            assumenda. Vitae quibusdam est amet iste ratione sit tempore
-            praesentium dolore.
+            I am a 3rd year student at AKTU. I am a react developer. Love python
+            trying out rust as of now. <br></br>Worked with spring boot, mysql
+            and mongodb.
           </p>
           <a href="#contact" className="btn btn-primary">
             Let's talk

@@ -1,8 +1,58 @@
 import React from "react";
 import "./experience.css";
 import { BsPatchCheckFill } from "react-icons/bs";
+import { logDOM } from "@testing-library/react";
 
 const Experience = () => {
+  // generate an array of objects with the skills and their level
+  const skills_front = [
+    {
+      name: "HTML",
+      level: "Experienced",
+    },
+    {
+      name: "CSS",
+      level: "Experienced",
+    },
+    {
+      name: "JavaScript",
+      level: "Intermediate",
+    },
+    {
+      name: "tailwindcss",
+      level: "Intermediate",
+    },
+    {
+      name: "Bootstrap",
+      level: "Kabhi kabhi",
+    },
+    {
+      name: "ReactJS",
+      level: "Intermediate",
+    },
+  ];
+  const skills__backend = [
+    {
+      name: "NodeJS",
+      level: "Intermediate",
+    },
+    {
+      name: "MongoDB",
+      level: "Intermediate",
+    },
+    {
+      name: "Python",
+      level: "Intermediate",
+    },
+    {
+      name: "Java",
+      level: "Intermediate",
+    },
+    {
+      name: "Rust",
+      level: "Beginner",
+    },
+  ];
   return (
     <section id="experience">
       <h5>What Skills I Have</h5>
@@ -37,7 +87,7 @@ const Experience = () => {
               <BsPatchCheckFill className="experience__details-icon" />
               <div>
                 <h4>Tailwind</h4>
-                <small className="text-light">Start karna abhi🌚</small>
+                <small className="text-light">Intermediate</small>
               </div>
             </article>
             <article className="experience__details">
@@ -77,7 +127,7 @@ const Experience = () => {
               <BsPatchCheckFill className="experience__details-icon" />
               <div>
                 <h4>MySQL</h4>
-                <small className="text-light">Pahle Mongo to aaye😑</small>
+                <small className="text-light">Intermediate</small>
               </div>
             </article>
             <article className="experience__details">
